@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ohjelmoijakysely</title>
+        <meta charset="UTF-8">
+        <!-- Import css -->
+        <link href="css/styling.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Ohjelmoijakysely</h1>
+            <a href="insert.php">Ohita kysely</a>
+            <h4>Yleistiedot</h4>
+            <form action="lisaa.php" method="POST">
+                <p>Ikä: <input min="15" max="65" required name="age" type="number"> <span class="tip">Arvoalue: 15-65</span></p>
+                <p>Sukupuoli: </p>
+                <p><input name="gender" value="1" required type="radio">Mies</p>
+                <p><input name="gender" value="2" type="radio">Nainen</p>
+                
+                <p>Kokemus vuosissa: <input name="experience" type="number"> <span class="tip">Arvoalue: 0-50</span></p>
+
+                <p>Ohjelmointi yleisellä tasolla</p>
+                <p><input name="general" required value="5" type="radio">Erittäin hyvä</p>
+                <p><input name="general" value="4" type="radio">Hyvä</p>
+                <p><input name="general" value="3" type="radio">Tyydyttävä</p>
+                <p><input name="general" value="2" type="radio">Välttävä</p>
+                <p><input name="general" value="1" type="radio">Heikko</p><br>
+
+                <p>Web frontend</p>
+                <p><input name="frontend" required value="1" type="radio">Erittäin hyvä</p>
+                <p><input name="frontend" value="2" type="radio">Hyvä</p>
+                <p><input name="frontend" value="3" type="radio">Tyydyttävä</p>
+                <p><input name="frontend" value="4" type="radio">Välttävä</p>
+                <p><input name="frontend" value="5" type="radio">Heikko</p><br>
+
+                <p>Web backend</p>
+                <p><input name="backend" required value="1" type="radio">Erittäin hyvä</p>
+                <p><input name="backend" value="2" type="radio">Hyvä</p>
+                <p><input name="backend" value="3" type="radio">Tyydyttävä</p>
+                <p><input name="backend" value="4" type="radio">Välttävä</p>
+                <p><input name="backend" value="5" type="radio">Heikko</p><br>
+
+                <p>Natiivi mobiili</p>
+                <p><input name="natiivi" required value="1" type="radio">Erittäin hyvä</p>
+                <p><input name="natiivi" value="2" type="radio">Hyvä</p>
+                <p><input name="natiivi" value="3" type="radio">Tyydyttävä</p>
+                <p><input name="natiivi" value="4" type="radio">Välttävä</p>
+                <p><input name="natiivi" value="5" type="radio">Heikko</p><br>
+
+                <p>Hybridi mobiili</p>
+                <p><input name="hybridi" required value="1" type="radio">Erittäin hyvä</p>
+                <p><input name="hybridi" value="2" type="radio">Hyvä</p>
+                <p><input name="hybridi" value="3" type="radio">Tyydyttävä</p>
+                <p><input name="hybridi" value="4" type="radio">Välttävä</p>
+                <p><input name="hybridi" value="5" type="radio">Heikko</p><br>
+
+                <p>Relaatiotietokannat</p>
+                <p><input name="sql" required value="1" type="radio">Erittäin hyvä</p>
+                <p><input name="sql" value="2" type="radio">Hyvä</p>
+                <p><input name="sql" value="3" type="radio">Tyydyttävä</p>
+                <p><input name="sql" value="4" type="radio">Välttävä</p>
+                <p><input name="sql" value="5" type="radio">Heikko</p><br>
+
+                <p>NoSQL Tietokannat</p>
+                <p><input name="nosql" required value="1" type="radio">Erittäin hyvä</p>
+                <p><input name="nosql" value="2" type="radio">Hyvä</p>
+                <p><input name="nosql" value="3" type="radio">Tyydyttävä</p>
+                <p><input name="nosql" value="4" type="radio">Välttävä</p>
+                <p><input name="nosql" value="5" type="radio">Heikko</p><br>
+
+                <input type="submit" value="Lähetä" />
+            </form>
+            
+        </div>
+        
+        <!-- import JavaScript libraries -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>      
+        <!-- Import custon JavaScript -->
+        <script src="js/app.js"></script>
+        
+    </body>
+</html>

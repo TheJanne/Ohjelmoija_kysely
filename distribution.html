@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Distributions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styling.css" type="text/css"/>
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Ohjelmoijakysely</h1>
+            <h4>Hajonnat</h4>
+
+            
+
+            <div class="canvasWrapper">
+                <h4>Ikä</h4>
+                <div class="chart"><canvas id="age"></canvas></div>
+            </div>            
+
+            <div class="canvasWrapper">
+                <h4>Sukupuoli</h4>
+                <canvas class="chart" id="gender" ></canvas>
+            </div>
+
+            
+            <div class="canvasWrapper">
+                <h4>Kokemus</h4>
+                <canvas class="chart" id="experience"></canvas>
+            </div>
+
+
+            
+            <div class="canvasWrapper">
+                <h4>Ohjelmointi yleisellä tasolla</h4>
+                <canvas class="chart" id="general"></canvas>
+            </div>
+
+
+            
+            <div class="canvasWrapper">
+                <h4>Web frontend</h4>
+                <canvas class="chart" id="frontend"></canvas>
+            </div>
+
+
+           
+            <div class="canvasWrapper">
+                 <h4>Web backend</h4>
+                <canvas class="chart" id="backend"></canvas>
+            </div>
+
+
+            
+            <div class="canvasWrapper">
+                <h4>Natiivi mobiili</h4>
+                <canvas class="chart" id="native"></canvas>
+            </div>
+
+
+            
+            <div class="canvasWrapper">
+                <h4>Hybridi mobiili</h4>
+                <canvas class="chart" id="hybrid"></canvas>
+            </div>
+
+
+            
+            <div class="canvasWrapper">
+                <h4>Relaatiotietokannat</h4>
+                <canvas class="chart" id="relatio"></canvas>   
+            </div>
+
+
+            
+            <div class="canvasWrapper">
+                <h4>NoSQL-teitokannat</h4>
+                <canvas class="chart" id="no"></canvas>      
+            </div>
+
+
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+            <script src="js/distribution.js"></script>
+        </div>
+    </body>
+</html>

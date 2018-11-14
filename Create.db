@@ -1,0 +1,17 @@
+//DROP DATABASE IF EXISTS programmer_query;
+
+CREATE DATABASE programmer_query;
+
+CREATE TABLE programmer_data(
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	age TINYINT UNSIGNED NOT NULL,
+	gender TINYINT NOT NULL,
+	experience_years TINYINT NOT NULL,
+	programming TINYINT NOT NULL,
+	web_frontend TINYINT NOT NULL,
+	web_backend TINYINT NOT NULL,
+	mobile_native TINYINT NOT NULL,
+	mobile_hybrid TINYINT NOT NULL,
+	relational_database TINYINT NOT NULL,
+	nosql_database TINYINT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
