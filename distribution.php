@@ -8,6 +8,7 @@
         $database = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8;", $user, $password);
         $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
+        //Query to get all the data and their values in the table
         $query = sprintf("SELECT age, gender, experience_years, programming, "
                 . "web_frontend, web_backend, mobile_native, mobile_hybrid, "
                 . "relational_database, nosql_database FROM $tablename");

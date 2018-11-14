@@ -8,6 +8,7 @@
     $database = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8;", $user, $password);
     $database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+    //Query for getting average of all skills.
     $query = sprintf("SELECT AVG(age) AS avg_age, 
                     AVG(experience_years) AS avg_experience_years,
                     AVG(programming) AS avg_programming, 
